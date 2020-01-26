@@ -34,6 +34,12 @@ public:
         return Vector(a * x, a * y, a * z);
     };
 
+    // multiplication terme à terme
+    Vector operator*(Vector &V)
+    {
+        return Vector(V.x * x, V.y * y, V.z * z);
+    };
+
     Vector operator/(double a)
     {
         return Vector(x / a, y / a, z / a);
