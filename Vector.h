@@ -45,11 +45,27 @@ public:
         return Vector(x / a, y / a, z / a);
     };
 
+    // opérateurs double
+
+    Vector operator+=(const Vector b)
+    {
+        x += b.x;
+        y += b.y;
+        z += b.z;
+        return *this;
+    }
+
     // opérateurs produits
     double dot(const Vector &a)
     {
         return a.x * x + a.y * y + a.z * z;
     };
+
+    Vector cross(const Vector &a)
+    // produit vectoriel
+    {
+        return Vector(y * a.z - z * a.y, z * a.x - x * a.z, x * a.y - y * a.x);
+    }
 
     double getNorm()
     {
