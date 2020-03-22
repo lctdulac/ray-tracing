@@ -14,6 +14,7 @@ public:
     std::vector<Sphere> spheres;
     Vector position_lumiere;
     double intensite_lumiere;
+    Sphere *lumiere; //pointeur vers
 
     // constructeur
     Scene(){};
