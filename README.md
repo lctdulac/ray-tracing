@@ -8,11 +8,14 @@ _____
 This repository reports the first steps of the development of a Ray-tracer algorithm.
 It covers :
 
-- 
-- 
-- 
-- 
--
+- Intersection of rays and spheres
+- Lighting and shadows computation
+- Gamma correction
+- Specular and transparent surfaces
+- Rendering equation and secondary lighting
+- Anti-aliasing
+- Spherical lighting and soft shadows
+- Depth of field
 
 _____
 
